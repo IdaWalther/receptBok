@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin:0;
+    padding:0;
+}
+.wrap {
+max-width:1000px;
+margin: auto;
+}
+
+.header__nav {
+display:flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+background-color: #bea484;
+position: fixed;
+width: 100%;
+max-width:1000px;
+margin:0;
+}
+
+.nav__menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__title {
+    padding-top:60px;
+    background-image: url(Bilder/wolflogo.png);
+    background-color: black;
+    height:40vh;
+    width: 100%;
+    background-position:bottom left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 25px 25px;
+}
+
+.header__title hr {
+    border-color: #e77127;
+    width: 25%;
+}
+
+h1 {
+    color: #e77127;
+}
+
+.logo {
+    width:50px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.footer__categories {
+    height:200px;
+    width:200px;
+    background-color: #bea484;
+    box-shadow: 5px 5px 5px rgba(81, 47, 30, 0.4);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__categories img {
+    width: 150px;
+    height: 150px;
+}
+
+/*
+.starter {
+    Photo by Pinar Kucuk on Unsplash
+    background-image: url(Bilder/pinar-kucuk-N2N7svpSFxk-unsplash.jpg);
+    background-size:cover;
+    background-position: bottom;
+}
+.lunch {
+    Photo by Emanuel Ekström on Unsplash
+    background-image: url(Bilder/emanuel-ekstrom-qxvhDhjFy4o-unsplash.jpg);
+    background-size:cover;
+    background-position: center;
+}
+.dinner {
+    Photo by Hanxiao on Unsplash
+    background-image: url(Bilder/hanxiao-zzxqoEa64_0-unsplash.jpg);
+    background-size:cover;
+    background-position: bottom;
+}
+.desert {
+    Photo by Yulia Khlebnikova on Unsplash 
+    background-image: url(Bilder/yulia-khlebnikova-FDYbS43jUrU-unsplash.jpg);
+    background-size:100%;
+    background-position: center;
+}*/
