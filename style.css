@@ -1,6 +1,14 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
+
+:root {
+    --main-color: #bea484;
+    --orange: #e77127;
+}
+
 body {
     margin:0;
     padding:0;
@@ -15,8 +23,7 @@ display:flex;
 flex-direction: row;
 justify-content: space-between;
 align-items: center;
-background-color: #bea484;
-position: fixed;
+background-color: var(--main-color);
 width: 100%;
 max-width:1000px;
 margin:0;
@@ -28,28 +35,27 @@ margin:0;
 }
 
 .header__title {
-    padding-top:60px;
-    background-image: url(Bilder/wolflogo.png);
     background-color: black;
     height:40vh;
-    width: 100%;
-    background-position:bottom left;
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0 0 25px 25px;
+    width:100%;
 }
 
-.header__title hr {
-    border-color: #e77127;
-    width: 25%;
+.header__title section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.header__logo--big {
+    height: 250px;
 }
 
 h1 {
-    color: #e77127;
+    color: var(--orange);
+    font-size: 3.5rem;
+    box-shadow:0 1px 0 var(--orange)
 }
 
 .logo {
@@ -65,15 +71,30 @@ h1 {
 .recept__card {
     padding:20px;
     width: 300px;
-    background-color: #bea484;
-    margin:20px 20px 100px 20px;
+    height:400px;
+    background-color: var(--main-color);
+    margin:60px 10px;
     border-radius: 12px;
     box-shadow: 0 12px 12px rgba(0,0,0,.5);
+    position: relative;
+}
+
+.recept__card section {
+    height: 110px;
+    overflow: hidden;
+}
+
+.recept__btn {
+    position: absolute;
+    bottom:0;
+    right:0;
+    margin:1rem;
+    cursor: pointer;
 }
 
 .recept__image {
     width:100%;
-
+    background-color: black;
     height: 200px;
     object-fit: cover;
     transform: translateY(-40px);
@@ -91,7 +112,7 @@ h1 {
 .footer__categories {
     height:200px;
     width:200px;
-    background-color: #bea484;
+    background-color: var(--main-color);
     box-shadow: 5px 5px 5px rgba(81, 47, 30, 0.4);
     border-radius: 50%;
     display: flex;
