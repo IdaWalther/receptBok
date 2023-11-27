@@ -7,16 +7,22 @@
 :root {
     --main-color: #bea484;
     --orange: #e77127;
+    --dark-color: #4A4033;
+    --lighter-color: #9C866B;
+
 }
 
 body {
     margin:0;
     padding:0;
+    background-color: var(--lighter-color);
 }
+
 .wrap {
-max-width:1000px;
-margin: auto;
-}
+    max-width:1000px;
+    margin: auto;
+    }
+
 
 .header__nav {
 display:flex;
@@ -29,15 +35,30 @@ max-width:1000px;
 margin:0;
 }
 
-.nav__menu {
+.nav-menu {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+}
+
+.nav__menu-btn {
+    list-style-type: none;
+    cursor: pointer;
+    position: relative;
+    width:150px;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.nav__menu-btn:hover, .nav__menu-btn:active {
+    background-color: var(--dark-color);
+    color: var(--orange);
 }
 
 .header__title {
     background-color: black;
     height:40vh;
     width:100%;
+    border-radius: 0 0 12px 12px;
 }
 
 .header__title section {
@@ -60,6 +81,7 @@ h1 {
 
 .logo {
     width:50px;
+    margin-right:1.5rem;
 }
 .recept {
     display:flex;
@@ -90,11 +112,21 @@ h1 {
     right:0;
     margin:1rem;
     cursor: pointer;
+    padding:.4rem;
+    background-color: var(--orange);
+    border-radius: 8px;
+    border:none;
+}
+
+.recept__btn:hover, .recept__btn:active {
+    background-color: var(--dark-color);
+    color: var(--orange);
 }
 
 .recept__image {
     width:100%;
-    background-color: black;
+    background-color: var(--dark-color);
+    padding:.2rem;
     height: 200px;
     object-fit: cover;
     transform: translateY(-40px);
