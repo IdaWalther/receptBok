@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="sv">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orten's Receptbook</title>
-    <link href="style.css" rel="stylesheet">
+    <title>Ortens receptbok</title>
+    <link href="/style.css" rel="stylesheet">
 </head>
-
 <body>
     <div class="wrap">
         <header class="header">
             <nav class="header__nav">
                 <ul class="nav-menu">
-                    <li class="nav__menu-btn"><a href="">Start</a></li>
+                    <li class="nav__menu-btn"><a href="/index.html">Start</a></li>
                     <li class="nav__menu-btn dropdown-parent"><a href="">Måltid</a>
                         <ul class="dropdown">
                             <li class="nav__menu-btn"><a href="/recept/forratt.html">Förrätt</a></li>
@@ -34,34 +32,28 @@
                 </section>
                 <section><input type="text" placeholder="Search..."></section>
                 <section>
-                    <img src="Bilder/wolflogo.png" alt="varg logga" class="logo">
+                    <img src="/Bilder/wolflogo.png" alt="varg logga" class="logo">
             </nav>
             <article class="header__title">
                 <section>
-                    <img class="header__logo--big" src="Bilder/wolflogo.png">
+                    <img class="header__logo--big" src="/Bilder/wolflogo.png">
                     <h1>Ortens kokbok</h1>
                 </section>
             </article>
         </header>
         <main class="main">
-            <article class="main__generate-food">
-                <div><button id="btn-random">Slumpa Maträtt</button> </div>
-                <h2 id="generate-random-food">Vad är du sugen på idag?</h2>
+            <article>
+                <h2>Efterrätt</h2>
             </article>
 
             <article class="recept">
                 <article class="recept__card">
-                    <img class="recept__image" src="" alt="">
+                    <img class="recept__image" src="/Bilder/vitchoklad.JPG" alt="bild på vit chokladmousse">
                     <section>
-                        <h3>Title</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nihil dolorem quia harum
-                            ratione est tempore repellat, voluptate voluptatum deserunt a autem rem obcaecati animi
-                            fugiat. Quo nisi iure dolorem?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nihil dolorem quia harum
-                            ratione est tempore repellat, voluptate voluptatum deserunt a autem rem obcaecati animi
-                            fugiat. Quo nisi iure dolorem?</p>
+                        <h3>Vit Chokladmousse</h3>
+                        <p>En vit chokladmousse som smälter i munnen. Passar väldigt bra tillsammans med jordgubbar. Fungerar både på sommaren som på vintern.</p>
                     </section>
-                    <button class="recept__btn">Till recept</button>
+                    <a href="/recept/efterratt/vitChokladmoussw.html" class="recept__btn">Till recept</a>
                 </article>
                 <article class="recept__card">
                     <img class="recept__image" src="" alt="">
@@ -69,7 +61,7 @@
                         <h3>Title</h3>
                         <p>Text here</p>
                     </section>
-                    <button class="recept__btn">Till recept</button>
+                    <a href="" class="recept__btn">Till recept</a>
                 </article>
                 <article class="recept__card">
                     <img class="recept__image" src="" alt="">
@@ -77,7 +69,7 @@
                         <h3>Title</h3>
                         <p>Text here</p>
                     </section>
-                    <button class="recept__btn">Till recept</button>
+                    <a href="" class="recept__btn">Till recept</a>
                 </article>
                 <article class="recept__card">
                     <img class="recept__image" src="" alt="">
@@ -85,7 +77,7 @@
                         <h3>Title</h3>
                         <p>Text here</p>
                     </section>
-                    <button class="recept__btn">Till recept</button>
+                    <a href="" class="recept__btn">Till recept</a>
                 </article>
                 <article class="recept__card">
                     <img class="recept__image" src="" alt="">
@@ -93,7 +85,7 @@
                         <h3>Title</h3>
                         <p>Text here</p>
                     </section>
-                    <button class="recept__btn">Till recept</button>
+                    <a href="" class="recept__btn">Till recept</a>
                 </article>
                 <article class="recept__card">
                     <img class="recept__image" src="" alt="">
@@ -101,26 +93,9 @@
                         <h3>Title</h3>
                         <p>Text here</p>
                     </section>
-                    <button class="recept__btn">Till recept</button>
+                    <a href="" class="recept__btn">Till recept</a>
                 </article>
             </article>
         </main>
-        <footer class="footer">
-            <button class="footer__categories"><a href="/recept/forratt.html">
-                    <img src="Bilder/salad.svg" alt="bild på en salladsskål"></a>
-            </button>
-            <button class="footer__categories"><a href="/recept/lunch.html">
-                    <img src="Bilder/noodles.svg" alt="bild på en tallrik nudlar"></a>
-            </button>
-            <button class="footer__categories"><a href="/recept/middag.html">
-                    <img src="Bilder/dinner.svg" alt="bild på tillagad kyckling"></a> 
-            </button>
-            <button class="footer__categories"><a href="/recept/efterratt.html">
-                    <img src="Bilder/icecream.svg" alt="bild på en glasskål"></a> 
-            </button>
-        </footer>
-    </div>
-    <script src="generateFood.js"></script>
 </body>
-
 </html>
