@@ -2,8 +2,8 @@
 const food = [
     "Makaronpudding",
     "Kyckling och currysås",
-    " ",
-    " ",
+    "Falafelrulle",
+    "Yakiniku med ris",
     " ",
     " ",
     " ",

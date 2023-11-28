@@ -237,7 +237,11 @@ hr {
     margin: 3rem 0;
     border-color: var(--dark-color);
 }
-
+.main-recept {
+    background-color: var(--main-color);
+    margin-top: -1.5rem;
+    padding:2rem;
+}
 .main-recept__time {
     text-align: center;
     margin-top: -1rem;
@@ -249,6 +253,11 @@ hr {
     flex-direction: row;
     justify-content: space-between;
     margin:0 6rem 0 -1.5rem;
+    border-bottom: 2px solid var(--dark-color);
+    padding: 10px;
 }
 
-
+.main-recept ol li {
+    border-bottom: 2px solid var(--dark-color);
+    padding: 10px;
+}
